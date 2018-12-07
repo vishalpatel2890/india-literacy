@@ -35,7 +35,8 @@ Normalized RMSE: 0.6752192312818441
 ## Feature Engineering
 After running our baseline model we decided to test for interactions between our features. After generating our interaction features we removed all the features that had too low of variance to be of significant importance. Next we examined our interaction features for high correlation. 
 
-[add heatmap image]
+![alt text](https://github.com/vishalpatel2890/india-literacy/blob/master/corr-heatmap.png "Correlation Heatmap")
+
 
 The points in red show high correlation between two of our features and we subsequently removed them from our dataset. After inital feature selection we then re-ran our regression testing and recorded our results. 
 
@@ -58,13 +59,15 @@ The most relevant features affecting total literacy rate in in various Indian di
 * Male to Female Ratio interaction with HINDUS ZERO TO 33% (Negatively Correlated) 
 * Percentage of Households with Internet interaction with OWNERSHIP OF HOUSEHOLDS > MEAN (Positively Correlated) 
 
-[ridge coef graph]
+![alt text](https://github.com/vishalpatel2890/india-literacy/blob/master/ridge_coef_plot.png "Coefficient values of each feature")
+
 Each feature passed through the ridge regression and its respective coefficient.
 
-[residuals]
+![alt text](https://github.com/vishalpatel2890/india-literacy/blob/master/ridge_residuals.png "Residual Errors Plot")
+
 Graph of our model predicted values versus our actual values
 
-We really enjoyed completing this project and learning about the various different factors that affect literacy.
+While our model is not useable due to inaccuracy this was a very interesting dive into regression and we really enjoyed completing this project and learning about the various different factors that affect literacy.
 
 Please reach out if you have any questions about what we did.
 
