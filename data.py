@@ -41,7 +41,7 @@ census_2011 = pd.concat([census_2011,ownership], axis = 1)
 census_2011=census_2011.drop(columns=['Binned Ownership', 'Binned Hindu', 'Percentage Hindu'])
 
 #select only relevant columns
-data = census_2011.iloc[:, -10:]
+data = census_2011.iloc[:, -9:]
 
 # separate y target
 target = census_2011['Total Literacy Rate']
